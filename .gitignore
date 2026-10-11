@@ -1,0 +1,73 @@
+# --- Secrets / lokale Konfiguration ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.publishsettings
+secrets.*
+*.secret.*
+
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!example.tfvars
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+# .terraform.lock.hcl bewusst NICHT ignorieren, gehört ins Repo
+
+# --- Bicep / Azure ---
+*.parameters.local.json
+.azure/
+# Kompilierte ARM-Templates aus Bicep (werden in der Pipeline erzeugt)
+infra/**/*.json
+!infra/**/*.parameters.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+
+# --- PowerShell ---
+*.pssproj.user
+TestResults/
+testResults.xml
+coverage.xml
+
+# --- Editor / IDE ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Logs / Temp ---
+*.log
+*.tmp
+*.bak
+*.swp
