@@ -1,0 +1,9 @@
+# Vorlage fuer die lokale backend.hcl (wird nicht committet).
+# Verwendung: cp backend.hcl.example backend.hcl, dann Platzhalter ersetzen.
+# Init: terraform init -backend-config=backend.hcl
+
+resource_group_name  = "rg-tfstate-shared"
+storage_account_name = "<storage-account-name>"
+container_name       = "tfstate"
+key                  = "dev.terraform.tfstate"
+use_azuread_auth     = true 
