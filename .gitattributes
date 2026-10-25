@@ -1,0 +1,3 @@
+# Zeilenenden vereinheitlichen: Textdateien werden im Repo immer mit LF gespeichert.
+# Binärdateien (z.B. Bilder) erkennt Git automatisch und lässt sie unverändert.
+* text=auto eol=lf
