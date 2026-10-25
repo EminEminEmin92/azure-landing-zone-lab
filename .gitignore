@@ -19,6 +19,8 @@ crash.*.log
 *.tfvars
 *.tfvars.json
 !example.tfvars
+# Lokale Backend-Konfiguration mit echten Werten (Vorlage: backend.hcl.example)
+backend.hcl
 override.tf
 override.tf.json
 *_override.tf
